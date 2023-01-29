@@ -1,19 +1,18 @@
 :root {
-	--input-bg-color:rgba(255,255,255,0.2);
 	--button-bg-color:chocolate;
 	--button-fg-color:white;
 	--form-bg-color:rgba(0,0,0,0.6);
-	--box-shadow-color:orange;
+	--box-shadow-color:greenyellow;
 	--default-text-color:whitesmoke;
 	--form-box-shadow-color: chocolate;
 	--app-title-icon-color: palegreen;
-	--accent-color:lightblue;
 	--app-title-fg-color: rgba(255,255,255,0.1);
 	--default-font:"Noto Sans", sans-serif;
 	--scrollbar-bg-color:indigo;
+	--link-fg-color:yellowgreen;
 	--scrollbar-thumb-bg-color:whitesmoke;
 	--scrollbar-track-bg-color:orangered;
-
+	--footer-fg-color:cyan;
 	--width:90%;
 }
 * {
@@ -55,6 +54,7 @@ body::-webkit-scrollbar-thumb {
 .header-parser-section, .header-parser-instructions, footer span {
 	margin: 2.5px 0;
 	backdrop-filter: blur(2px);
+	box-shadow: 0 0 10px var(--box-shadow-color);
 }
 .header-parser-section {
 	background-color: var(--form-bg-color);
@@ -73,6 +73,7 @@ body::-webkit-scrollbar-thumb {
 }
 .header-parser-section header h1 {
 	margin-bottom: 3px;
+	margin-left: 5px;
 }
 .header-parser-section header i {
 	margin-left: 5px;
@@ -85,6 +86,7 @@ form button {
 	background:none;
 	background-color: var(--button-bg-color);
 	outline: none;
+	cursor: pointer;
 	border:none;
 	border-radius: 5px;
 	padding: 10px;
@@ -112,7 +114,7 @@ form button:hover {
 li:nth-child(2){
 	color: lime;
 }
-li:nth-child(3) {
+li:nth-child(4) {
 	color: yellow;
 }
 @media (max-width: 500px) {
@@ -127,15 +129,15 @@ footer {
 	align-items: center;
 	justify-content: flex-end;
 
+
 }
 footer span {
 	display: flex;
 	align-items: center;
-	width: 200px;
+	width: 220px;
 	color: cyan;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 5px;
-
 	background-color: var(--form-bg-color);
 }
 footer span p {
@@ -148,14 +150,14 @@ footer span a {
 	text-decoration: none;
 	font-size: 1.1em;
 	margin-left: 2px;
-	color: yellowgreen;
+	color: var(--link-fg-color);
 }
 footer span a:hover {
-	text-shadow: 0 0 10px yellowgreen;
+	text-shadow: 0 0 20px var(--link-fg-color);
 }
 footer span a i {
-	color: yellowgreen;
-	margin-left: 2px;
+	color: var(--link-fg-color);
+	margin-left: 5px;
 	margin-bottom: 3px;
 }
 

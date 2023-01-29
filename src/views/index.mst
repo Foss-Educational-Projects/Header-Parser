@@ -36,18 +36,20 @@
         <div class='header-parser'>
             <div class="header-parser-section">
                 <header>
+                    <i class="bi bi-braces-asterisk"></i>
                     <h1>Header Parser</h1>
-                    <i class="fa-solid fa-file-lines"></i>
+                    <i class="bi bi-braces-asterisk"></i>
                 </header>
                 <section class="get-user-info">
-                    <form action="/api/whoami" method="POST">
+                    <form action="/api/whoami" method="GET">
                         <button type="submit">Fetch Your Data</button>
                     </form>
                 </section>
             </div>
             <ul class="header-parser-instructions">
-                <li class="instructions-header">Usage</li>
+                <li class="instructions-header">Usage(URL)</li>
                 <li>[base url]/api/whoami</li>
+                <li class="instructions-header">Output(JSON)</li>
                 <li>{"ipaddress":"159.20.14.100","language":"en-US,en;q=0.5",
 "software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</li>
             </ul>
