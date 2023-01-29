@@ -1,0 +1,4 @@
+{
+	"watch": ["src"],
+	"ext": "mustache mst html js json"
+}

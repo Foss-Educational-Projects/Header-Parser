@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link
+            rel='apple-touch-icon'
+            sizes='180x180'
+            href='./apple-touch-icon.png'
+        />
+        <link
+            rel='icon'
+            type='image/png'
+            sizes='32x32'
+            href='./favicon-32x32.png'
+        />
+        <link
+            rel='icon'
+            type='image/png'
+            sizes='16x16'
+            href='./favicon-16x16.png'
+        />
+        <link rel='manifest' href='/site.webmanifest' />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link
+            rel='stylesheet'
+            href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css'
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel='stylesheet' href='./css/main.css' />
+        <title>Header Parser</title>
+    </head>
+    <body>
+        <div class='header-parser'>
+            <div class="header-parser-section">
+                <header>
+                    <h1>Header Parser</h1>
+                    <i class="fa-solid fa-file-lines"></i>
+                </header>
+                <section class="get-user-info">
+                    <form action="/api/whoami" method="POST">
+                        <button type="submit">Fetch Your Data</button>
+                    </form>
+                </section>
+            </div>
+            <ul class="header-parser-instructions">
+                <li class="instructions-header">Usage</li>
+                <li>[base url]/api/whoami</li>
+                <li>{"ipaddress":"159.20.14.100","language":"en-US,en;q=0.5",
+"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</li>
+            </ul>
+            <footer>
+                <span>
+                    <p>Created By</p>
+                    <a href="https://fosterz.netlify.app/">
+                    <p>Foster Z</p>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                </span>
+            </footer>
+        </div>
+        <script src='./js/main.js'></script>
+    </body>
+</html>
